@@ -76,7 +76,7 @@ namespace FirstAPIProject.Controllers
         public async Task<IActionResult> DeleteContact( int id)
         {
             await _dbContext.Contacts.Where(x => x.Id == id).ExecuteDeleteAsync();
-            return Ok("Kişi silindi");
+            return Ok("Kişi silindi !");
         }
 
     }
