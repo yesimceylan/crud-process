@@ -61,7 +61,7 @@ namespace FirstAPIProject.Controllers
             var data = await _dbContext.Contacts.FindAsync(id);
             if (data == null)
             {
-                return NotFound("Kişi bulunamadı.");
+                return NotFound("Kişi bulunamadı !");
             }
             data.FullName =contact.FullName;
             data.Email=contact.Email;
